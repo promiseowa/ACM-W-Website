@@ -139,55 +139,55 @@ function App() {
           <p className="section-intro">Explore moments from our community events and activities</p>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src= "src/gallery/image3.jpg" alt="2025 SIG Fair" className="gallery-item-image" />
+              <img src="/gallery/Image3.jpg" alt="2025 SIG Fair" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">2025 SIG Fair</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image5.jpg" alt="ACM-W Stickers" className="gallery-item-image" />
+              <img src="/gallery/Image5.jpg" alt="ACM-W Stickers" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">ACM-W Stickers</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image11.jpg" alt="ACM-W Professional Workshop" className="gallery-item-image" />
+              <img src="/gallery/Image11.jpg" alt="ACM-W Professional Workshop" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">ACM-W Professional Workshop</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image12.jpg" alt="ACM-W Professional Workshop" className="gallery-item-image" />
+              <img src="/gallery/Image12.jpg" alt="ACM-W Professional Workshop" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">ACM-W Professional Workshop</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image7.jpg" alt="Chapter Meeting" className="gallery-item-image" />
+              <img src="/gallery/Image7.jpg" alt="Chapter Meeting" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">Chapter Meeting</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image8.jpg" alt="Members" className="gallery-item-image" />
+              <img src="/gallery/Image8.jpg" alt="Members" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">Members</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image14.jpg" alt="CAPWIC 2026 Grad Fair" className="gallery-item-image" />
+              <img src="/gallery/Image14.jpg" alt="CAPWIC 2026 Grad Fair" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">CAPWIC 2026 Grad Fair</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image2.jpg" alt="SIG Fair" className="gallery-item-image" />
+              <img src="/gallery/Image2.jpg" alt="SIG Fair" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">SIG Fair</div>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="src/gallery/image15.jpg" alt="CAPWIC 2026" className="gallery-item-image" />
+              <img src="/gallery/Image15.jpg" alt="CAPWIC 2026" className="gallery-item-image" />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-text">CAPWIC 2026</div>
               </div>
