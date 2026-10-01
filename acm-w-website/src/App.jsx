@@ -1,6 +1,71 @@
 import { useState } from 'react'
 import './App.css'
 
+function FloatingGeometricFigures() {
+  return (
+    <div className="geometric-figures">
+      <div className="figure cube" style={{ '--index': 0 }}></div>
+      <div className="figure octahedron" style={{ '--index': 1 }}></div>
+      <div className="figure tetrahedron" style={{ '--index': 2 }}></div>
+      <div className="figure icosahedron" style={{ '--index': 3 }}></div>
+      <div className="figure pyramid" style={{ '--index': 4 }}></div>
+    </div>
+  )
+}
+
+function ParticleNodes() {
+  const particles = Array.from({ length: 20 }, (_, i) => ({
+    id: i,
+    size: Math.random() * 4 + 2,
+    delay: Math.random() * 4,
+    duration: Math.random() * 8 + 12,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+  }))
+
+  return (
+    <div className="particle-nodes">
+      {particles.map(p => (
+        <div
+          key={p.id}
+          className="particle"
+          style={{
+            '--size': `${p.size}px`,
+            '--delay': `${p.delay}s`,
+            '--duration': `${p.duration}s`,
+            '--left': `${p.left}%`,
+            '--top': `${p.top}%`,
+          }}
+        ></div>
+      ))}
+    </div>
+  )
+}
+
+function CodeFragments() {
+  const codeSnippets = [
+    'const code = true;',
+    'function innovate() {}',
+    'await future.compile();',
+    '<Women />',
+    'deploy.success();',
+  ]
+
+  return (
+    <div className="code-fragments">
+      {codeSnippets.map((code, i) => (
+        <div
+          key={i}
+          className="code-fragment"
+          style={{ '--index': i }}
+        >
+          &lt;{code}/&gt;
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function App() {
   const [activeNav, setActiveNav] = useState('home')
 
@@ -37,6 +102,10 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="hero-section">
+        <FloatingGeometricFigures />
+        <ParticleNodes />
+        <CodeFragments />
+
         <div className="hero-container">
           <div className="hero-content">
             <h1>Northeastern University Arlington Campus</h1>
