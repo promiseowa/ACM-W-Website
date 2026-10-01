@@ -35,48 +35,25 @@ function App() {
         </div>
       </nav>
 
-    {/* Hero Section */}
-<section id="home" className="hero-section">
-  {/* Cyber grid & ambient glow */}
-  <div className="hero-cyber-grid" />
-  <div className="hero-glow-orb" />
-
-  <div className="hero-container">
-    <div className="hero-content">
-      
-      {/* Pill Badge */}
-      <div className="hero-pill-badge">
-        <span className="hero-pill-dot" />
-        <span>Northeastern University &bull; Arlington</span>
-      </div>
-
-      {/* Chapter Logo */}
-      <img
-        src="/nu-arlington-acm-w-logo.png"
-        alt="NU Arlington ACM-W Logo"
-        className="hero-logo"
-      />
-
-      <p className="hero-subtitle gradient-text-acmw">
-        Empowering Women in Computing
-      </p>
-
-      <p className="hero-description">
-        Join our community dedicated to supporting women in technology and fostering innovation through collaboration, mentorship, and learning.
-      </p>
-
-      <div className="hero-actions">
-        <button 
-          className="btn-cyber-primary" 
-          onClick={() => scrollToSection('contact')}
-        >
-          Get Involved &rarr;
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
+      {/* Hero Section */}
+      <section id="home" className="hero-section">
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1>Northeastern University Arlington Campus</h1>
+            <img src="/nu-arlington-acm-w-logo.png" alt="NU Arlington ACM-W Logo" className="hero-logo" />
+            <p className="hero-subtitle">Empowering Women in Computing</p>
+            <p className="hero-description">Join our community dedicated to supporting women in technology and fostering innovation through collaboration and learning.</p>
+            <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get Involved</button>
+          </div>
+          <div className="hero-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
+              <path d="M30 50 L50 30 L70 50 L70 70 L30 70 Z" fill="none" stroke="currentColor" strokeWidth="2" />
+              <circle cx="50" cy="50" r="5" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+      </section>
 
       {/* Registration Section */}
       <section className="registration-section">
