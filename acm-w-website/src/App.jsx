@@ -45,13 +45,6 @@ function App() {
             <p className="hero-description">Join our community dedicated to supporting women in technology and fostering innovation through collaboration and learning.</p>
             <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get Involved</button>
           </div>
-          <div className="hero-icon">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
-              <path d="M30 50 L50 30 L70 50 L70 70 L30 70 Z" fill="none" stroke="currentColor" strokeWidth="2" />
-              <circle cx="50" cy="50" r="5" fill="currentColor" />
-            </svg>
-          </div>
         </div>
       </section>
 
