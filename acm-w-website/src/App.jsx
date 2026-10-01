@@ -56,11 +56,6 @@ function App() {
                   <div style={{ position: "relative", zIndex: 10, maxWidth: "800px", textAlign: "center" }}>
                     
                   </div>
-                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
-                    <path d="M30 50 L50 30 L70 50 L70 70 L30 70 Z" fill="none" stroke="currentColor" strokeWidth="2" />
-                    <circle cx="50" cy="50" r="5" fill="currentColor" />
-                  </svg>
                   </section>
         </div>
         </div>
