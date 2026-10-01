@@ -35,7 +35,54 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+    {/* Hero Section */}
+<section id="home" className="hero-section hero-wrapper-cyber">
+  {/* Background cyber grid */}
+  <div className="hero-cyber-grid" />
+  
+  {/* Ambient glow spotlight */}
+  <div className="hero-glow-orb" />
+
+  {/* Main Content */}
+  <div className="hero-container" style={{ position: "relative", zIndex: 10 }}>
+    <div className="hero-content">
+      {/* Pill Badge */}
+      <div className="hero-pill-badge">
+        <span style={{ display: "inline-block", width: "8px", height: "8px", borderRadius: "50%", background: "#38bdf8" }} />
+        <span>Northeastern University &bull; Arlington Campus</span>
+      </div>
+
+      {/* Chapter Logo */}
+      <img 
+        src="/nu-arlington-acm-w-logo.png" 
+        alt="NU Arlington ACM-W Logo" 
+        className="hero-logo" 
+      />
+
+      {/* Gradient Main Heading */}
+      <h1 className="hero-title">
+        ACM-W Student Chapter
+      </h1>
+
+      <p className="hero-subtitle gradient-text-acmw">
+        Empowering Women in Computing
+      </p>
+
+      <p className="hero-description">
+        Join our community dedicated to supporting women in technology and fostering innovation through collaboration, mentorship, and learning.
+      </p>
+
+      <div style={{ display: "flex", gap: "1rem", justifyContent: "center", marginTop: "1.5rem", flexWrap: "wrap" }}>
+        <button 
+          className="btn-cyber-primary" 
+          onClick={() => scrollToSection('contact')}
+        >
+          Get Involved &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+</section>  {/* Hero Section */}
       <section id="home" className="hero-section">
         <div className="hero-container">
           <div className="hero-content">
