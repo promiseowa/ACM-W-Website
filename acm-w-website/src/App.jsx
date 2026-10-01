@@ -36,33 +36,26 @@ function App() {
       </nav>
 
     {/* Hero Section */}
-<section id="home" className="hero-section hero-wrapper-cyber">
-  {/* Background cyber grid */}
+<section id="home" className="hero-section">
+  {/* Cyber grid & ambient glow */}
   <div className="hero-cyber-grid" />
-  
-  {/* Ambient glow spotlight */}
   <div className="hero-glow-orb" />
 
-  {/* Main Content */}
-  <div className="hero-container" style={{ position: "relative", zIndex: 10 }}>
+  <div className="hero-container">
     <div className="hero-content">
+      
       {/* Pill Badge */}
       <div className="hero-pill-badge">
-        <span style={{ display: "inline-block", width: "8px", height: "8px", borderRadius: "50%", background: "#38bdf8" }} />
-        <span>Northeastern University &bull; Arlington Campus</span>
+        <span className="hero-pill-dot" />
+        <span>Northeastern University &bull; Arlington</span>
       </div>
 
       {/* Chapter Logo */}
-      <img 
-        src="/nu-arlington-acm-w-logo.png" 
-        alt="NU Arlington ACM-W Logo" 
-        className="hero-logo" 
+      <img
+        src="/nu-arlington-acm-w-logo.png"
+        alt="NU Arlington ACM-W Logo"
+        className="hero-logo"
       />
-
-      {/* Gradient Main Heading */}
-      <h1 className="hero-title">
-        ACM-W Student Chapter
-      </h1>
 
       <p className="hero-subtitle gradient-text-acmw">
         Empowering Women in Computing
@@ -72,7 +65,7 @@ function App() {
         Join our community dedicated to supporting women in technology and fostering innovation through collaboration, mentorship, and learning.
       </p>
 
-      <div style={{ display: "flex", gap: "1rem", justifyContent: "center", marginTop: "1.5rem", flexWrap: "wrap" }}>
+      <div className="hero-actions">
         <button 
           className="btn-cyber-primary" 
           onClick={() => scrollToSection('contact')}
@@ -80,33 +73,10 @@ function App() {
           Get Involved &rarr;
         </button>
       </div>
+
     </div>
   </div>
-</section>  {/* Hero Section */}
-      <section id="home" className="hero-section">
-        <div className="hero-container">
-          <div className="hero-content">
-            <h1>Northeastern University Arlington Campus</h1>
-            <img src="/nu-arlington-acm-w-logo.png" alt="NU Arlington ACM-W Logo" className="hero-logo" />
-            <p className="hero-subtitle">Empowering Women in Computing</p>
-            <p className="hero-description">Join our community dedicated to supporting women in technology and fostering innovation through collaboration and learning.</p>
-            <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get Involved</button>
-          </div>
-             <div className="hero-icon">
-                <section className="hero-wrapper-cyber">
-                  {/* Background cyber grid */}
-                    <div className="hero-cyber-grid" />
-                  {/* Ambient glow */}
-                  <div className="hero-glow-orb" />
-
-                  {/* Content */}
-                  <div style={{ position: "relative", zIndex: 10, maxWidth: "800px", textAlign: "center" }}>
-                    
-                  </div>
-                  </section>
-        </div>
-        </div>
-      </section>
+</section>
 
       {/* Registration Section */}
       <section className="registration-section">
