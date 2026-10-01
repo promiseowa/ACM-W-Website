@@ -259,7 +259,7 @@ function App() {
               <div className="info-item">
                 <h3>🔗 Follow Us</h3>
                 <div className="social-links">
-                  <a href="#" title="LinkedIn">LinkedIn||</a>
+                  <a href="#" title="LinkedIn">LinkedIn</a>
                   <a href="#" title="GitHub">GitHub</a>
                 </div>
               </div>
