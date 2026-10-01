@@ -125,10 +125,11 @@ section {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #0066ff 0%, #00a3a3 50%, #00d9ff 100%);
+  background: linear-gradient(135deg, #0052cc 0%, #007a7a 50%, #0099cc 100%);
   color: var(--white);
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 650px;
   padding-top: 6rem;
   position: relative;
@@ -153,12 +154,20 @@ section {
   padding: 0 2rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   align-items: center;
+  justify-items: center;
   box-sizing: border-box;
   position: relative;
   z-index: 5;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: auto;
+  }
 }
 
 /* ===== Geometric Figures ===== */
@@ -385,6 +394,20 @@ section {
   }
 }
 
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
 .hero-content h1 {
   color: var(--white);
   font-size: 3rem;
@@ -438,7 +461,7 @@ section {
 
 /* Registration Section */
 .registration-section {
-  background: linear-gradient(135deg, #0066ff 0%, #00a3a3 50%, #1e7fd7 100%);
+  background: linear-gradient(135deg, #0052cc 0%, #007a7a 50%, #1a6bb8 100%);
   color: var(--white);
   padding: 5rem 0;
   position: relative;
@@ -997,12 +1020,16 @@ section {
   }
 
   .hero-container {
-    grid-template-columns: 1fr;
     padding: 1rem;
   }
 
   .hero-content h1 {
     font-size: 1.8rem;
+  }
+
+  .hero-section {
+    min-height: 500px;
+    padding-top: 4rem;
   }
 
   .hero-logo {
@@ -1050,4 +1077,24 @@ section {
     font-size: 2rem;
   }
 
+}
+
+/* Tablet Responsive Design */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    min-height: 550px;
+    padding-top: 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-logo {
+    max-width: 350px;
+  }
 }
