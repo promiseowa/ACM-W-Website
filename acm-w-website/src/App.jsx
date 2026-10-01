@@ -9,7 +9,7 @@ function App() {
     const element = document.getElementById(section)
     element?.scrollIntoView({ behavior: 'smooth' })
   }
-  
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -45,7 +45,7 @@ function App() {
             <p className="hero-description">Join our community dedicated to supporting women in technology and fostering innovation through collaboration and learning.</p>
             <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get Involved</button>
           </div>
-          <div className="hero-icon">
+             <div className="hero-icon">
                 <section className="hero-wrapper-cyber">
                   {/* Background cyber grid */}
                     <div className="hero-cyber-grid" />
@@ -55,37 +55,14 @@ function App() {
                   {/* Content */}
                   <div style={{ position: "relative", zIndex: 10, maxWidth: "800px", textAlign: "center" }}>
                     
-                    {/* Status Pill */}
-                    <div className="hero-pill-badge">
-                      <span style={{ display: "inline-block", width: "8px", height: "8px", borderRadius: "50%", background: "#38bdf8" }} />
-                      <span>ACM-W Student Chapter &bull; Arlington</span>
-                    </div>
-
-                  {/* Heading */}
-                  <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)", fontWeight: 800, lineHeight: 1.15, marginBottom: "1.25rem" }}>
-                    Empowering Women in <br />
-                    <span className="gradient-text-acmw">Computing & Technology</span>
-                  </h1>
-
-                  {/* Subtitle */}
-                  <p style={{ color: "#94a3b8", fontSize: "1.1rem", lineHeight: 1.6, maxWidth: "600px", margin: "0 auto 2.25rem" }}>
-                    Supporting students through technical workshops, LeetCode practice, 
-                    mentorship, and community across the Arlington campus.
-                  </p>
-
-                  {/* CTA Buttons */}
-                  <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-                    <a href="#join" className="btn-cyber-primary">
-                      Join Chapter &rarr;
-                    </a>
-                    <a href="#events" className="btn-cyber-secondary">
-                      View Events
-                    </a>
                   </div>
-
-                  </div>
-                </section>
-          </div>
+                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
+                    <path d="M30 50 L50 30 L70 50 L70 70 L30 70 Z" fill="none" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="50" cy="50" r="5" fill="currentColor" />
+                  </svg>
+                  </section>
+        </div>
         </div>
       </section>
 
