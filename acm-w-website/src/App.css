@@ -163,13 +163,6 @@ section {
   z-index: 5;
 }
 
-@media (min-width: 1024px) {
-  .hero-container {
-    grid-template-columns: 1fr 1fr;
-    justify-items: auto;
-  }
-}
-
 /* ===== Geometric Figures ===== */
 .geometric-figures {
   position: absolute;
@@ -399,13 +392,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (min-width: 1024px) {
-  .hero-content {
-    text-align: left;
-    align-items: flex-start;
-  }
 }
 
 .hero-content h1 {
